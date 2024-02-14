@@ -1,0 +1,46 @@
+node_modules/
+.en
+
+
+../../(friend)
+        ../../(jane)
+        ../../.3T/
+        ../../.android/
+        ../../.arduinoIDE/
+        ../../.bash_history
+        ../../.cache/
+        ../../.dia/
+        ../../.emulator_console_auth_token
+        ../../.gitconfig
+        ../../.gitignore
+        ../../.gradle/
+        ../../.lesshst
+        ../../.m2/
+        ../../.nbi/
+        ../../.node_repl_history
+        ../../.packettracer
+        ../../.swt/
+        ../../.th-client/
+        ../../.viminfo
+        ../../.vscode/
+        ../../AndroidStudioProjects/
+        ../../AppData/
+        ../../Contacts/
+        ../
+        ../../Documents/
+        ../../Downloads/
+        ../../Favorites/
+        ../../Links/
+        ../../Music/
+        ../../NTUSER.DAT
+        ../../NTUSER.DAT{37050e0e-ae7f-11ed-831c-ac33b410ab68}.TM.blf
+        ../../NTUSER.DAT{37050e0e-ae7f-11ed-831c-ac33b410ab68}.TMContainer00000000000000000001.regtrans-ms
+        ../../NTUSER.DAT{37050e0e-ae7f-11ed-831c-ac33b410ab68}.TMContainer00000000000000000002.regtrans-ms
+        ../../OneDrive/
+        ../../Pictures/
+        ../../Saved Games/
+        ../../Searches/
+        ../../Videos/
+        ../../ntuser.dat.LOG1
+        ../../ntuser.dat.LOG2
+        ../../ntuser.ini
