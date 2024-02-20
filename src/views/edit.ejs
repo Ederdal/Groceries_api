@@ -23,7 +23,7 @@
     </div>
 
     <div data-role="content">
-        <form id="editForm" action="/api/products/<%= product.barcode %>" method="PUT">
+        <form id="editForm" action="/<%= product.barcode %>" method="PUT">
             <input type="text" name="barcode" id="txt_codigo_barras" placeholder="Código de barras" value="<%= product.barcode %>" readonly>
             <input type="text" name="description" id="txt_description" placeholder="Descripción" value="<%= product.description %>">
             <input type="text" name="brand" id="txt_brand" placeholder="Marca" value="<%= product.brand %>">
@@ -55,7 +55,7 @@
             data: formData,
             success: function (data) {
                 alert("Producto actualizado correctamente.");
-                window.location.href = '/api/products/'; // Redirige a '/api/products/'
+                window.location.href = '/'; // Redirige a '/api/products/'
             },
             error: function (xhr, status, error) {
                 console.error(error);

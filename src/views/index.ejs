@@ -23,7 +23,7 @@
     </div>
 
     <div data-role="content">
-        <form action="/api/products" method="post">
+        <form action="/" method="post">
             <input type="text" name="barcode" id="txt_codigo_barras" placeholder="Código de barras" value="">
 
             <input type="text" name="description" id="txt_description" placeholder="Descripción" value="">
@@ -70,8 +70,8 @@
                     </li>
                     <li>Estatus del producto: <%= product.status %>
                     </li>
-                    <li><a href="/api/products/<%= product.barcode %>" class="ui-btn">Editar</a></li>
-                    <li><a href="/api/products/delete/<%= product.barcode %>" class="ui-btn">Eliminar</a></li>
+                    <li><a href="/<%= product.barcode %>" class="ui-btn">Editar</a></li>
+                    <li><a href="/delete/<%= product.barcode %>" class="ui-btn">Eliminar</a></li>
                 </ul>   
             </div>
             <% }); %>
