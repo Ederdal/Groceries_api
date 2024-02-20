@@ -26,7 +26,7 @@ export const insertOne = (req, res) => {
   productDAO.insertOne(req.body)
     .then(result => {
       console.log("producto guardado");
-      res.redirect('/api/products/');
+      res.redirect('/');
     })
     .catch(err => res.json({
       status: "Server unavailable",
@@ -42,7 +42,7 @@ export const deleteOne = (req, res) => {
           message: "Product not found :/"
         });
       }
-      res.redirect('/api/products');
+      res.redirect('/');
     })
     .catch(err => { 
       console.error(err);
