@@ -55,22 +55,16 @@ export const deleteOne = (req, res) => {
 
 
 export const updateOne = (req, res) => {
-  const barcode = req.params.barcode; 
-  const updatedData = req.body; 
-
-  productDAO.updateOne(barcode, updatedData) 
-      .then(updatedProduct => {
-          if (!updatedProduct) { 
-              return res.status(404).json({
-                  message: "Product not found"
-              });
-          }
-          res.status(200).json(updatedProduct); 
-      })
-      .catch(err => { 
-          console.error("Error updating product:", err);
-          res.status(500).json({ error: "Internal server error" });
-      });
+  productDAO
+    .updateOne(req.params.barcode, req.body)
+    .then((product) => {
+      !product
+        ? res.json({
+            message: "Product not found",
+          })
+        : res.json({ status: 'Success' });
+    })
+    .catch((err) => res.json({ status: "Server Unavailable" }));
 };
 
 
