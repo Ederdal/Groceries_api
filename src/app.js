@@ -13,6 +13,6 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan('dev'));
-app.use('/api/products', productRouter);
+app.use('/', productRouter);
 
 export default app;  // Aquí exportas la variable 'app'
